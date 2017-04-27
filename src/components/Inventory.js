@@ -76,7 +76,7 @@ class Inventory extends React.Component {
   renderLogin() {
     return (
       <nav className="login">
-        <h2>Inventory</h2>
+        <h2>Inventory ({this.props.storeId})</h2>
         <p>Sign in to manage your store's inventory</p>
         <form className="login-form" ref={(form => {this.loginForm = form})} onSubmit={(e) => this.loginEmailPassword(e)}>
           <label>Email</label> <input ref={(input) => {this.email = input}} type="text"/>
@@ -120,7 +120,7 @@ class Inventory extends React.Component {
 
     return (
       <div>
-        <h2>Inventory</h2>
+        <h2>Inventory ({this.props.storeId})</h2>
         {logout}
         {Object.keys(this.props.fishes).map(this.renderInventory)}
         <AddFishForm addFish={this.props.addFish}/>
