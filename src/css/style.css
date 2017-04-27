@@ -658,3 +658,9 @@ input[type=submit].twitter:after {
   text-align: center;
   font-size: 3rem;
 }
+.store-selector span {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
